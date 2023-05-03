@@ -1,0 +1,41 @@
+﻿<Window x:Class="LivingRoomOffice.Pavlova.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LivingRoomOffice.Pavlova"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="379" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="165" RenderTransformOrigin="-1.25,-0.25" Fill="#FFCAFFC3"/>
+        <Rectangle HorizontalAlignment="Left" Height="379" Margin="180,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="165" RenderTransformOrigin="-1.25,-0.25" Fill="#FFC3CCFF"/>
+        <Rectangle HorizontalAlignment="Left" Height="379" Margin="350,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="165" RenderTransformOrigin="-1.25,-0.25" Fill="#FFA9F9FF"/>
+        <Rectangle HorizontalAlignment="Left" Height="379" Margin="520,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="270" RenderTransformOrigin="-1.25,-0.25" Fill="#FF969191"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.79,0.002"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="180,28,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.79,0.002"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="350,28,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.053,0.81"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="520,28,0,0" VerticalAlignment="Top" RenderTransformOrigin="5.475,1.196"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,2.12"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="180,84,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="180,144,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="350,84,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="350,144,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="350,217,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="180,217,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBLengthR" HorizontalAlignment="Left" Margin="92,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" Height="26"/>
+        <TextBox x:Name="TBWidthR" HorizontalAlignment="Left" Margin="92,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" Height="26" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="TBLengthL" HorizontalAlignment="Left" Margin="262,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" Height="26"/>
+        <TextBox x:Name="TBWidthL" HorizontalAlignment="Left" Margin="262,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" Height="26"/>
+        <TextBox x:Name="TBNumW" HorizontalAlignment="Left" Margin="262,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" Height="26"/>
+        <TextBox x:Name="TBLengthO" HorizontalAlignment="Left" Margin="432,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" Height="26" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="TBWidthO" HorizontalAlignment="Left" Margin="432,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" Height="26" RenderTransformOrigin="2.276,2.117"/>
+        <TextBox x:Name="TBNumS" HorizontalAlignment="Left" Margin="432,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" Height="26"/>
+        <ListBox x:Name="LIstRooms" HorizontalAlignment="Left" Height="330" Margin="520,59,0,0" VerticalAlignment="Top" Width="250" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Button x:Name="BaddRoom" Content="Добавить&#xD;&#xA; " HorizontalAlignment="Left" Margin="42,394,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.767,0.253" Height="30" Width="103"/>
+        <Button x:Name="BAddLivingRoom" Content="Добавить " HorizontalAlignment="Left" Margin="211,394,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.767,0.253" Height="30" Width="103"/>
+        <Button x:Name="BAddOffice" Content="Добавить" HorizontalAlignment="Left" Margin="381,394,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.767,0.253" Height="30" Width="103" Click="Button_Click"/>
+        <Button x:Name="BGetList" Content="Выдать&#xD;&#xA;" HorizontalAlignment="Left" Margin="604,394,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.767,0.253" Height="30" Width="102" Click="Button_Click"/>
+
+    </Grid>
+</Window>
