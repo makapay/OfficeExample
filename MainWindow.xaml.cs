@@ -12,18 +12,52 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using RoomLibrary1.Pav;
 
-namespace LivingRoomOffice.Pavlova
+namespace LivingRoomPavlova
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        Room room = new Room();
+        LivingRoom livingRoom = new LivingRoom();
+        Office office = new Office();
         public MainWindow()
         {
             InitializeComponent();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            room.RoomLength = Convert.ToDouble(TBLengrhR.Text);
+            room.RoomWidth = Convert.ToDouble(TBWidthR.Text);
+
+        }
+
+        private void BAddLivingRoom_Click(object sender, RoutedEventArgs e)
+        {
+            livingRoom.RoomLength = Convert.ToDouble(TBLegthL.Text);
+            livingRoom.RoomWidth = Convert.ToDouble(TBWithL);
+            livingRoom.NumWin = Convert.ToInt32(TBNumW);
+
+        }
+
+        private void BAddOffice_Click(object sender, RoutedEventArgs e)
+        {
+            office.RoomLength = Convert.ToDouble(TBLengthO.Text);
+            office.RoomWidth = Convert.ToDouble(TBWidthO.Text);
+            office.NumSocKets = Convert.ToInt32(TBNumS.Text);
+
+        }
+
+        private void BGetList_Click(object sender, RoutedEventArgs e)
+        {
+            ListRooms.Content = "";
+            ListRooms.Content += room.Info() + "\n";
+            ListRooms.Content += livingRoom.Info() + "\n";
+            ListRooms.Content += office.Info();
+        }
     }
 }

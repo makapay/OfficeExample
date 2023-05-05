@@ -1,7 +1,7 @@
-﻿<Application x:Class="LivingRoomOffice.Pavlova.App"
+﻿<Application x:Class="LivingRoomPavlova.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:LivingRoomOffice.Pavlova"
+             xmlns:local="clr-namespace:LivingRoomPavlova"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
